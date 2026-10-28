@@ -6,7 +6,7 @@ namespace: class-5
 resources:
 - ../../base
 - configmap.yaml
-- ingress.yaml 
+- ingress.yaml
 
 patches:
 - path: patch-deployment.yaml
@@ -19,4 +19,5 @@ patches:
 #     skala-registry.skala-ai.com/class-5/sk163-webserver=skala-registry.skala-ai.com/class-5/sk163-webserver:<NEW_TAG>
 images:
 - name: skala-registry.skala-ai.com/class-5/sk163-webserver
-  newTag: "1.0.docker"
+  newName: skala-registry.skala-ai.com/class-5/sk163-webserver
+  newTag: 1.0-bd4-a0ec235
